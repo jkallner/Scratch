@@ -9,6 +9,7 @@ while input_radius == 0
   puts "Please input the radius of the circle:"
   input_radius = gets.to_f
 end
+
 # Create new Circle_nfo class to do all calculations
 class Circle_nfo
   def initialize(input_radius)
@@ -37,22 +38,9 @@ class Circle_nfo
   
 end
 
+#Show the results of all of our calculations
 mycircle = Circle_nfo.new(input_radius)
 puts "The area of your circle is: #{mycircle.circle_area.round(2)}"
 puts "The perimeter of your circle is: #{mycircle.circle_perimeter.round(2)}"
 puts "The volume of a sphere based upon your input radius is: #{mycircle.sphere_volume.round(2)}"
 puts "The surface area of the sphere is: #{mycircle.spehere_surface_area.round(2)}"
-#def circle_info(radius)
-#  {:area => Math::PI * (radius * radius),
-#   :perimeter => Math::PI * (2 * radius),
-#   :sphere_volume => ((4/3)* Math::PI * (radius ** 3)),
-#   :sphere_surface_area => (4* (Math::PI * (radius * radius)))}
-#end
-
-# Displays the results of the circle_info method
-#results_hash = circle_info(input_radius)
-#  puts "The area of the circle is: #{results_hash[:area].round(2)}"
-#  puts "The perimeter of the circle is: #{results_hash[:perimeter].round(2)}"
-#  puts "The volume of a sphere based upon the given radius is: #{results_hash[:sphere_volume].round(2)}"
-#  puts "The surface area of the sphere would be: #{results_hash[:sphere_surface_area].round(2)}"
-  
