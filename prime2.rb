@@ -14,16 +14,21 @@ def is_prime(input_number)
   divisible_counter = 0
 # (1..input_number).each do |x|
   for x in 1..input_number do
-    if input_number % x == 0
-     divisible_counter += 1
-     puts divisible_counter
-    else
-    end
+      if input_number % x == 0
+      divisible_counter += 1
+      puts divisible_counter
+      break if divisible_counter > 2
+      end
   end
-  divisible_counter
+  if divisible_counter < 3
+    test_results = true
+  else
+    test_results = false
+  end
+  return test_results
 end
 
-results = is_prime(input_number)
 
+results = is_prime(input_number)
 puts results
 
