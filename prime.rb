@@ -38,7 +38,7 @@ prime_numbers = Array.new
   end
 end
 
-#tests to see if 0 was included in the list and then removes it if so
+#tests to see if 0 was included in the array and then removes it if so
 if prime_numbers.include? 0
   prime_numbers.delete(0)
 end
