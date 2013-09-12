@@ -1,0 +1,1 @@
+This is just a scratch area for learning Ruby.
