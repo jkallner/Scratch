@@ -6,5 +6,3 @@ def count_frequency(word_list)
   end
   counts
 end
-
-p count_frequency(["sparky", "the", "cat", "sat", "on", "the", "mat"])
