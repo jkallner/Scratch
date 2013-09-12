@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-
 #Initial display the tell the user what the program does and then asks for input
 puts "This program will find all the prime numbers between the two numbers you input."
 puts "Please enter two numbers to search between other than 0 of course :)"
